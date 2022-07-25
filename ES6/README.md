@@ -70,15 +70,35 @@ function howMany(...args) { }
 ```
 מאפשר לקבל מספר בלתי מוגדר ובלתי מוגבל של פרמטרים בתור מערך.
 
-## מערכים
+### בין "עוד..." למערך
+ספריית [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) 
+נמצאת בין הספריות שמקבלים כברירת מחדל יש בה הרבה קבועים שנדרשים לביצוע פעולות מתימטיות (π, e ועוד) 
+כמו כן פעולות מתימטיות שמרחיבות את הפעולות הבסיסיות של השפה כמו sin, cos וכו'
+
+הפעולה max מוגדרת להחזיר את הערך המקסימלי מתוך רשימת הערכים שהתקבלו אליה.
+
+```javascript console
+Math.max(3,6,2,9,1);
+> 9
+```
+הערכים שהפונקציה מקבלת הם כמו ...args 
+לכאורה מדובר במערך, אבל זהו לא בדיוק מערך שכן:
+```javascript console
+let arr=[3,6,2,9,1];
+Math.max(arr);
+> NaN
+```
+הפונקציה לא יכולה לקבל מערך אלא רשימת ערכים. בשביל שהיא תוכל לפעול על מערך צריך 'להמיר' אותו לצורת רשימת ערכים באופן הבא: 
+```javascript console
+let arr=[3,6,2,9,1];
+Math.max(...arr);
+> 9
+```
+השלוש נקודות בהתחלה הופכות את המערך לרשימת ערכים, זה נקרא פעולת פריסה (spread operator)
 
 ### TODO
 
 
-
-* [x] ...
-* [x] Use the Rest Parameter with Function Parameters
-* [ ] Use the Spread Operator to Evaluate Arrays In-Place
 * [ ] Use Destructuring Assignment to Extract Values from Objects
 * [ ] Use Destructuring Assignment to Assign Variables from Objects
 * [ ] Use Destructuring Assignment to Assign Variables from Nested Objects
