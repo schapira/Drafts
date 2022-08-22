@@ -96,6 +96,12 @@ Math.max(...arr);
 ```
 השלוש נקודות בהתחלה הופכות את המערך לרשימת ערכים, זה נקרא פעולת פריסה (spread operator)
 
+## Destructuring Assignment
+### Extract Values from Objects
+Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object.
+
+Consider the following ES5 code:
+
 ### TODO
 
 
