@@ -29,11 +29,13 @@ main {
     left: 50%;
 }
 
-.square {
-    background-color: blueviolet;
+.houseBody {
+    /*background-color: burlywood;*/
+    background-image: repeating-linear-gradient(90deg, burlywood, rgba(165, 42, 42, 0.83) 2%, burlywood 4%);
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    left: 25%;
 
 }
 
@@ -46,10 +48,10 @@ main {
 }
 
 .door {
-    background-color: aqua;
+    background-image: repeating-linear-gradient(180deg, burlywood, rgba(165, 42, 42, 0.83) 2%, burlywood 4%);
     width: 50px;
     height: 100px;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 45%;
 }
