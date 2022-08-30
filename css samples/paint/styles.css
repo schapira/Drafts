@@ -2,7 +2,29 @@ h1 {
     text-align: center;
 }
 
+main {
+    height: auto;
+    max-width: 400px;
+}
+
+.house {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
 .square {
     background-color: blueviolet;
-    width: 5px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 100px solid red;
 }
