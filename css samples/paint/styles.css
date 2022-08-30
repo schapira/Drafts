@@ -4,16 +4,23 @@ h1 {
 
 main {
     height: auto;
-    max-width: 400px;
+    max-width: auto;
 }
 
 .sun {
     background-color: yellow;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     position: absolute;
-    left: 15%;
+    left: 25%;
+    top: 25%;
+    filter: blur(8px);
+}
+
+.sun:hover {
+    background: radial-gradient(circle, yellow, rgb(243, 243, 134) 98%);
+
 }
 
 .house {
