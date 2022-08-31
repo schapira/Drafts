@@ -1,20 +1,61 @@
+body {
+    height: 95vmin;
+    width: 98vmax;
+    align-content: center;
+}
+
 h1 {
     text-align: center;
 }
 
 main {
-    height: auto;
-    max-width: auto;
+    height: 85%;
+    width: 99%;
+    border-color: blueviolet;
+    border-style: solid;
 }
+
+.mountains {
+    width: 100%;
+    height: 50%;
+    align-content: center;
+    position: relative;
+    top: 50%;
+
+    border-color: blue;
+    border-style: solid;
+}
+
+.rightMountain,
+.leftMountain {
+    background-color: burlywood;
+    border-radius: 50% / 50%;
+    position: relative;
+    bottom: -50%;
+
+}
+
+.rightMountain {
+    width: 400px;
+    height: 200px;
+    left: 50%;
+}
+
+/*
+.leftMountain {
+    width: 400px;
+    height: 200px;
+
+}*/
 
 .sun {
     background-color: yellow;
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: 15%;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     left: 25%;
-    top: 25%;
+    top: 5%;
     filter: blur(8px);
 }
 
@@ -30,12 +71,12 @@ main {
 }
 
 .houseBody {
-    /*background-color: burlywood;*/
     background-image: repeating-linear-gradient(90deg, burlywood, rgba(165, 42, 42, 0.83) 2%, burlywood 4%);
     width: 150px;
     height: 150px;
     margin: 0 auto;
     left: 25%;
+
 
 }
 
@@ -53,5 +94,15 @@ main {
     height: 100px;
     position: absolute;
     bottom: 0;
-    left: 45%;
+    left: 50%;
+}
+
+.drop {
+    width: 15px;
+    height: 15px;
+    border-radius: 16px 0px 16px 16px;
+    background-color: blue;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 2%;
 }
