@@ -1,7 +1,8 @@
 body {
     height: 95vmin;
-    width: 98vmax;
-    align-content: center;
+    width: 100vmin;
+    margin: auto;
+    background-color: aqua;
 }
 
 h1 {
@@ -13,15 +14,16 @@ main {
     width: 99%;
     border-color: blueviolet;
     border-style: solid;
+    margin: auto;
 }
 
+/*
 .mountains {
     width: 100%;
     height: 50%;
     align-content: center;
     position: relative;
     top: 50%;
-
     border-color: blue;
     border-style: solid;
 }
@@ -53,10 +55,12 @@ main {
     width: 15%;
     height: 15%;
     border-radius: 50%;
+    margin: 0;
     position: relative;
-    left: 25%;
+    left: 5%;
     top: 5%;
     filter: blur(8px);
+
 }
 
 .sun:hover {
@@ -65,36 +69,34 @@ main {
 }
 
 .house {
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
+    margin: 0 auto 0;
+    /* position: absolute;
+    bottom: 8%;
+    left: auto;
+    right: auto;*/
 }
 
 .houseBody {
     background-image: repeating-linear-gradient(90deg, burlywood, rgba(165, 42, 42, 0.83) 2%, burlywood 4%);
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    left: 25%;
-
-
+    width: 15vw;
+    height: 15vw;
 }
 
 .roof {
     width: 0;
     height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 100px solid red;
+    border-left: 7.5vw solid transparent;
+    border-right: 7.5vw solid transparent;
+    border-bottom: 10vw solid red;
 }
 
 .door {
     background-image: repeating-linear-gradient(180deg, burlywood, rgba(165, 42, 42, 0.83) 2%, burlywood 4%);
-    width: 50px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    width: 5vw;
+    height: 10vh;
+    position: relative;
+    margin: 0 auto 0;
+
 }
 
 .drop {
